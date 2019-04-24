@@ -15,14 +15,22 @@ Adds new agreement
     type: '',
     uid: '',
     aid: '',
-    parts: []
+    parts: [
+      {
+        uid: '',
+        aid: '',
+        status: '',
+        updated: Date,
+        isSigned: boolean
+      }
+    ]
   } 
 ```
 
 ## ```POST /agreements````
 
 Post an array of uids to get agreements.
-Can filter by type.
+Can filter by type (type is optional).
 
 ```JavaScript
 {
@@ -40,7 +48,15 @@ Returns array of agreements
     type: '',
     uid: '',
     aid: '',
-    parts: [],
+    parts: [
+      {
+        uid: '',
+        aid: '',
+        status: '',
+        updated: Date,
+        isSigned: boolean
+      }
+    ],
     history: [],
     isSigned: boolean
     data: []
@@ -72,6 +88,26 @@ Returns a given agreement
   data: []
 }
 ```
+
+## ```POST /agreements/:id```
+
+Updates an agreement
+
+## ```DELETE /agreements/:id```
+
+Deletes an agreement
+
+## ```PUT /agreements/:id/parts```
+
+Adds a part to an agreement
+
+## ```POST /agreements/:id/parts/:partid```
+
+Updates a part of an agreement
+
+## ```DELETE /agreements/:id/parts/:partid```
+
+Deletes an agreement part
 
 ## ```GET /docs```
 
