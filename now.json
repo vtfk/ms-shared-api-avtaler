@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "name": "ms-shared-api-avtaler",
+  "scope": "telemark",
+  "alias": [
+    "avtaler.api.service.t-fk.no"
+  ],
+  "env": {
+    "NODE_ENV": "production",
+    "DB": "@azure-cosmos-felles-connection",
+    "COLLECTION": "avtaler",
+    "JWT_SECRET": "@tfk-jwt-secret"
+  },
+  "builds": [
+    { "src": "/index.js", "use": "@now/node" }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "/index.js" }
+  ]
+}
