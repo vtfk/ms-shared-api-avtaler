@@ -22,10 +22,12 @@ Adds new agreement
     type: '',
     uid: '',
     aid: '',
+    fid: '',
     parts: [
       {
         uid: '',
         aid: '',
+        fid: '',
         status: '',
         updated: Date,
         isSigned: boolean
@@ -55,10 +57,12 @@ Returns array of agreements
     type: '',
     uid: '',
     aid: '',
+    fid: '',
     parts: [
       {
         uid: '',
         aid: '',
+        fid: '',
         status: '',
         updated: Date,
         isSigned: boolean
@@ -66,7 +70,8 @@ Returns array of agreements
     ],
     history: [],
     isSigned: boolean
-    data: []
+    data: [],
+    sendInvoiceTo: 'uid'
   }  
 ]
 ```
@@ -81,10 +86,12 @@ Returns a given agreement
   type: '',
   uid: '',
   aid: '',
+  fid: '',
   parts: [
     {
       uid: '',
       aid: '',
+      fid: '',
       status: '',
       updated: Date,
       isSigned: boolean
@@ -92,7 +99,8 @@ Returns a given agreement
   ],
   history: [],
   isSigned: boolean
-  data: []
+  data: [],
+  sendInvoiceTo: 'uid'
 }
 ```
 
