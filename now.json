@@ -7,9 +7,15 @@
   ],
   "env": {
     "NODE_ENV": "production",
-    "DB": "@azure-cosmos-felles-connection",
-    "COLLECTION": "avtaler",
-    "JWT_SECRET": "@tfk-jwt-secret"
+    "JWT_SECRET": "your-jwt-api-secret",
+    "MONGODB_CONNECTION": "connection-string-to-your-mongodb",
+    "MONGODB_COLLECTION": "mongodb-collection-name",
+    "MONGODB_NAME": "mongodb-database-name",
+    "SVARUT_SERVICE_URL": "url-for-your-svarut-service",
+    "SVARUT_SERVICE_SECRET": "jwt-secret-for-your-svarut-service",
+    "PAPERTRAIL_HOST": "your-papertrail-host",
+    "PAPERTRAIL_PORT": "your-papertrail-post",
+    "PAPERTRAIL_HOSTNAME": "your-papertrail-hostname"
   },
   "builds": [
     { "src": "/index.js", "use": "@now/node" }

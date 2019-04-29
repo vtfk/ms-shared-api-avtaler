@@ -4,7 +4,11 @@ API for agreements
 
 # API
 
-All API calls needs valid jwt
+All API calls needs valid jwt.
+
+## ```GET /```
+
+This README
 
 ## ```PUT /agreements```
 
@@ -27,9 +31,9 @@ Adds new agreement
   } 
 ```
 
-## ```POST /agreements````
+## ```POST /agreements/search```
 
-Post an array of uids to get agreements.
+Post an array of uids to search agreements for uids.
 Can filter by type (type is optional).
 
 ```JavaScript
@@ -64,7 +68,7 @@ Returns array of agreements
 ]
 ```
 
-## ```GET /agreements/:id````
+## ```GET /agreements/:id```
 
 Returns a given agreement
 
@@ -91,27 +95,43 @@ Returns a given agreement
 
 ## ```POST /agreements/:id```
 
-Updates an agreement
+Updates an agreement.
 
 ## ```DELETE /agreements/:id```
 
-Deletes an agreement
+Deletes the given agreement.
 
 ## ```PUT /agreements/:id/parts```
 
-Adds a part to an agreement
+Adds a new part to an agreement.
 
 ## ```POST /agreements/:id/parts/:partid```
 
-Updates a part of an agreement
+Updates a part of an agreement.
 
 ## ```DELETE /agreements/:id/parts/:partid```
 
-Deletes an agreement part
+Deletes an agreement part.
 
 ## ```GET /docs```
 
 This README
+
+# Setup
+
+Configure your environment
+
+```
+JWT_SECRET=your-jwt-api-secret
+MONGODB_CONNECTION=connection-string-to-your-mongodb
+MONGODB_COLLECTION=mongodb-collection-name
+MONGODB_NAME=mongodb-database-name
+SVARUT_SERVICE_URL=url-for-your-svarut-service
+SVARUT_SERVICE_SECRET=jwt-secret-for-your-svarut-service
+PAPERTRAIL_HOST=your-papertrail-host
+PAPERTRAIL_PORT=your-papertrail-post
+PAPERTRAIL_HOSTNAME=your-papertrail-hostname
+```
 
 # License
 
