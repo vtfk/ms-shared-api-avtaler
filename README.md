@@ -126,6 +126,11 @@ Returns a given agreement
 
 Updates an agreement.
 
+```
+$ curl -vX POST http://localhost:3000/agreements/5cc83e037433fd768e4f9768 -d @test/data/update-agreement.json \
+--header "Content-Type: application/json"
+```
+
 ## ```DELETE /agreements/:id```
 
 Deletes the given agreement.
