@@ -130,6 +130,11 @@ Updates an agreement.
 
 Deletes the given agreement.
 
+```
+$ curl -vX DELETE http://localhost:3000/agreements/5cc8141418a4bf6f7db233d4
+```
+
+
 ## ```GET /docs```
 
 This README
