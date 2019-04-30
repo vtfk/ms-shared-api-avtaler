@@ -22,7 +22,7 @@
     "start": "micro",
     "dev": "micro-dev -H localhost",
     "deploy": "npm test && now --target production",
-    "refresh": "rm -rf node_mdoules && rm package-lock.json && npm install"
+    "refresh": "rm -rf node_modules && rm package-lock.json && npm install"
   },
   "keywords": [
     "microservice",
