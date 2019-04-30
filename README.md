@@ -27,6 +27,11 @@ Adds new agreement
   } 
 ```
 
+```
+$ curl -vX PUT http://localhost:3000/agreements -d @test/data/main-record.json \
+--header "Content-Type: application/json"
+```
+
 ## ```POST /agreements/search```
 
 Post an array of uids to search agreements for uids.

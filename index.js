@@ -23,6 +23,7 @@ if (process.env.JWT_SECRET) {
 router.get('/', handlers.frontpage)
 router.get('/docs', handlers.frontpage)
 router.get('/agreements/:id', handlers.getAgreementById)
+router.put('/agreements', handlers.addNewAgreement)
 
 module.exports = (request, response) => {
   router(request, response, finalhandler(request, response))
