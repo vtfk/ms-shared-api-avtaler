@@ -19,20 +19,11 @@ Adds new agreement
 
 ```JavaScript
   {
-    type: '',
     uid: '',
     aid: '',
     fid: '',
-    parts: [
-      {
-        uid: '',
-        aid: '',
-        fid: '',
-        status: '',
-        updated: Date,
-        isSigned: boolean
-      }
-    ]
+    type: '',
+    partOf: ''
   } 
 ```
 
@@ -54,18 +45,24 @@ Returns array of agreements
 [
   {
     _id: '',
-    type: '',
     uid: '',
     aid: '',
     fid: '',
+    type: '',
+    partOf: '',
+    status: '',
+    updated: Date,
     parts: [
       {
         uid: '',
         aid: '',
         fid: '',
+        type: '',
+        partOf: '',
         status: '',
         updated: Date,
-        isSigned: boolean
+        isSigned: boolean,
+        data: []
       }
     ],
     history: [],
@@ -82,26 +79,32 @@ Returns a given agreement
 
 ```JavaScript
 {
-  _id: '',
-  type: '',
-  uid: '',
-  aid: '',
-  fid: '',
-  parts: [
-    {
-      uid: '',
-      aid: '',
-      fid: '',
-      status: '',
-      updated: Date,
-      isSigned: boolean
-    }
-  ],
-  history: [],
-  isSigned: boolean
-  data: [],
-  sendInvoiceTo: 'uid'
-}
+    _id: '',
+    uid: '',
+    aid: '',
+    fid: '',
+    type: '',
+    partOf: '',
+    status: '',
+    updated: Date,
+    parts: [
+      {
+        uid: '',
+        aid: '',
+        fid: '',
+        type: '',
+        partOf: '',
+        status: '',
+        updated: Date,
+        isSigned: boolean,
+        data: []
+      }
+    ],
+    history: [],
+    isSigned: boolean
+    data: [],
+    sendInvoiceTo: 'uid'
+  }
 ```
 
 ## ```POST /agreements/:id```
@@ -111,18 +114,6 @@ Updates an agreement.
 ## ```DELETE /agreements/:id```
 
 Deletes the given agreement.
-
-## ```PUT /agreements/:id/parts```
-
-Adds a new part to an agreement.
-
-## ```POST /agreements/:id/parts/:partid```
-
-Updates a part of an agreement.
-
-## ```DELETE /agreements/:id/parts/:partid```
-
-Deletes an agreement part.
 
 ## ```GET /docs```
 
