@@ -44,6 +44,16 @@ Can filter by type (type is optional).
 }
 ```
 
+```
+$ curl -vX POST http://localhost:3000/agreements/search -d @test/data/search-no-types.json \
+--header "Content-Type: application/json"
+```
+
+```
+$ curl -vX POST http://localhost:3000/agreements/search -d @test/data/search-type.json \
+--header "Content-Type: application/json"
+```
+
 Returns array of agreements 
 
 ```JavaScript
