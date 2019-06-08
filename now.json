@@ -37,6 +37,10 @@
       "dest": "/README.html"
     },
     { 
+      "src": "/agreements",
+      "dest": "/index.js"
+    },
+    { 
       "src": "/agreements/(.*)",
       "dest": "/index.js"
     }

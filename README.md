@@ -45,12 +45,12 @@ Can filter by type (type is optional).
 ```
 
 ```
-$ curl -vX POST http://localhost:3000/agreements/search -d @test/data/search-no-types.json \
+$ curl -v POST http://localhost:3000/agreements/search -d @test/data/search-no-types.json \
 --header "Content-Type: application/json"
 ```
 
 ```
-$ curl -vX POST http://localhost:3000/agreements/search -d @test/data/search-type.json \
+$ curl -v POST http://localhost:3000/agreements/search -d @test/data/search-type.json \
 --header "Content-Type: application/json"
 ```
 
@@ -92,6 +92,10 @@ Returns array of agreements
 
 Returns a given agreement
 
+```
+curl -v http://localhost:3000/agreements/5cfba60a47289a8314684faf
+```
+
 ```JavaScript
 {
     _id: '',
@@ -127,7 +131,7 @@ Returns a given agreement
 Updates an agreement.
 
 ```
-$ curl -vX POST http://localhost:3000/agreements/5cc83e037433fd768e4f9768 -d @test/data/update-agreement.json \
+$ curl -v POST http://localhost:3000/agreements/5cfba60a47289a8314684faf -d @test/data/update-agreement.json \
 --header "Content-Type: application/json"
 ```
 
@@ -136,7 +140,7 @@ $ curl -vX POST http://localhost:3000/agreements/5cc83e037433fd768e4f9768 -d @te
 Deletes the given agreement.
 
 ```
-$ curl -vX DELETE http://localhost:3000/agreements/5cc8141418a4bf6f7db233d4
+$ curl -vX DELETE http://localhost:3000/agreements/5cfba60a47289a8314684faf
 ```
 
 
