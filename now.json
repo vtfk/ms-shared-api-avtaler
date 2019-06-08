@@ -7,7 +7,7 @@
   ],
   "env": {
     "NODE_ENV": "production",
-    "JWT_SECRET": "your-jwt-api-secret",
+    "JWT_SECRET": "your-jwt-secret",
     "MONGODB_CONNECTION": "connection-string-to-your-mongodb",
     "MONGODB_COLLECTION": "mongodb-collection-name",
     "MONGODB_NAME": "mongodb-database-name",
