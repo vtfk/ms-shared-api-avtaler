@@ -144,11 +144,19 @@ $ curl -vX DELETE http://localhost:3000/agreements/5cc8141418a4bf6f7db233d4
 
 This README
 
-# Setup
+# Development
 
-Configure your environment
+You'll need the [now-cli](https://zeit.co/now) installed
+
+- clone the repo
+- install dependencies
+- add a `.env` file
+- start the service with now-dev ```$ now dev```
+
+.env
 
 ```
+NODE_ENV=development
 JWT_SECRET=your-jwt-api-secret
 MONGODB_CONNECTION=connection-string-to-your-mongodb
 MONGODB_COLLECTION=mongodb-collection-name
@@ -159,6 +167,19 @@ PAPERTRAIL_HOST=your-papertrail-host
 PAPERTRAIL_PORT=your-papertrail-post
 PAPERTRAIL_HOSTNAME=your-papertrail-hostname
 ```
+
+# Deploy
+
+This service is created to run on the [ZEIT/Now](https://zeit.co/now) serverless infrastructure.
+
+Make sure the settings in [now.json](now.json) matches your environment.
+
+Run the deploy script.
+
+```
+$ npm run deploy
+```
+
 
 # License
 

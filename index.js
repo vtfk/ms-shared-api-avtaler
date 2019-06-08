@@ -20,8 +20,6 @@ if (process.env.JWT_SECRET) {
 }
 
 // ROUTES
-router.get('/', handlers.frontpage)
-router.get('/docs', handlers.frontpage)
 router.post('/agreements/search', handlers.searchAllAgreements)
 router.get('/agreements/:id', handlers.getAgreementById)
 router.post('/agreements/:id', handlers.updateAgreementById)

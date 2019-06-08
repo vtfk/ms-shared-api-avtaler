@@ -7,20 +7,38 @@
   ],
   "env": {
     "NODE_ENV": "production",
-    "JWT_SECRET": "your-jwt-secret",
-    "MONGODB_CONNECTION": "connection-string-to-your-mongodb",
-    "MONGODB_COLLECTION": "mongodb-collection-name",
-    "MONGODB_NAME": "mongodb-database-name",
+    "JWT_SECRET": "@tfk-jwt-secret",
+    "MONGODB_CONNECTION": "@db-tfkcosmostest-connection",
+    "MONGODB_COLLECTION": "avtaler",
+    "MONGODB_NAME": "felles",
     "SVARUT_SERVICE_URL": "url-for-your-svarut-service",
     "SVARUT_SERVICE_SECRET": "jwt-secret-for-your-svarut-service",
-    "PAPERTRAIL_HOST": "your-papertrail-host",
-    "PAPERTRAIL_PORT": "your-papertrail-post",
-    "PAPERTRAIL_HOSTNAME": "your-papertrail-hostname"
+    "PAPERTRAIL_HOST": "@tfk-papertrail-host",
+    "PAPERTRAIL_PORT": "@tfk-papertrail-port",
+    "PAPERTRAIL_HOSTNAME": "elevpc"
   },
   "builds": [
-    { "src": "/index.js", "use": "@now/node" }
+    { 
+      "src": "/index.js",
+      "use": "@now/node"
+    },
+    { 
+      "src": "/*.md",
+      "use": "@now/md"
+    }
   ],
   "routes": [
-    { "src": "/(.*)", "dest": "/index.js" }
+    { 
+      "src": "/",
+      "dest": "/README.html"
+    },
+    { 
+      "src": "/docs",
+      "dest": "/README.html"
+    },
+    { 
+      "src": "/agreements/(.*)",
+      "dest": "/index.js"
+    }
   ]
 }
