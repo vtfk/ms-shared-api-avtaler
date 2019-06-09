@@ -25,6 +25,10 @@
     { 
       "src": "/*.md",
       "use": "@now/md"
+    },
+    { 
+      "src": "/docs/*.md",
+      "use": "@now/md"
     }
   ],
   "routes": [
@@ -35,6 +39,10 @@
     { 
       "src": "/docs",
       "dest": "/README.html"
+    },
+    { 
+      "src": "/docs/beskrivelse.md",
+      "dest": "/docs/beskrivelse.html"
     },
     { 
       "src": "/agreements",
