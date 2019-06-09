@@ -5,7 +5,7 @@
 
 API for agreements.
 
-For more information read the [description](docs/beskrivelse)(in Norwegian)
+For more information read the [description](docs/beskrivelse.md)(in Norwegian)
 
 # API
 
