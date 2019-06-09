@@ -140,7 +140,7 @@ $ curl -v POST http://localhost:3000/agreements/5cfba60a47289a8314684faf -d @tes
 Manually sign an agreement.
 
 ```
-$ curl -v POST http://localhost:3000/agreements/5cfba60a47289a8314684faf/sign -d @test/data/sign-agreement.json \
+$ curl -v POST http://localhost:3000/agreements/5cfca18f25a3a62e947d615b/sign -d @test/data/sign-agreement.json \
 --header "Content-Type: application/json"
 ```
 
