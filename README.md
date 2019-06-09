@@ -3,7 +3,9 @@
 
 # ms-shared-api-avtaler
 
-API for agreements
+API for agreements.
+
+For more information read the [description](docs/beskrivelse)(in Norwegian)
 
 # API
 
@@ -193,6 +195,11 @@ Run the deploy script.
 $ npm run deploy
 ```
 
+# Related
+
+- [micro-svarut](https://github.com/telemark/micro-svarut) microservice wrapper for SvarUt
+- [minelev-avtaler](https://github.com/telemark/minelev-avtaler) frontend for avtaler in MinElev
+- [avtale-generator](https://github.com/telemark/avtale-generator) generator for avtaler
 
 # License
 
