@@ -15,7 +15,7 @@ router.use(cors())
 
 // JWT
 if (process.env.JWT_SECRET) {
-  router.use(jwt({ secret: process.env.JWT_SECRET }).unless({ path: [{ url: '/', methods: ['GET'] }, { url: '/docs', methods: ['GET'] }] }))
+  router.use(jwt({ secret: process.env.JWT_SECRET }))
   router.use(handleUnauthorized)
 }
 
