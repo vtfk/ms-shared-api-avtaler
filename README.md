@@ -135,6 +135,15 @@ $ curl -v POST http://localhost:3000/agreements/5cfba60a47289a8314684faf -d @tes
 --header "Content-Type: application/json"
 ```
 
+## ```POST /agreements/:id/sign```
+
+Manually sign an agreement.
+
+```
+$ curl -v POST http://localhost:3000/agreements/5cfba60a47289a8314684faf/sign -d @test/data/sign-agreement.json \
+--header "Content-Type: application/json"
+```
+
 ## ```DELETE /agreements/:id```
 
 Deletes the given agreement.

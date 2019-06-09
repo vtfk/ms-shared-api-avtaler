@@ -23,6 +23,7 @@ if (process.env.JWT_SECRET) {
 router.post('/agreements/search', handlers.searchAllAgreements)
 router.get('/agreements/:id', handlers.getAgreementById)
 router.post('/agreements/:id', handlers.updateAgreementById)
+router.post('/agreements/:id/sign', handlers.signAgreementById)
 router.delete('/agreements/:id', handlers.deleteAgreementById)
 router.put('/agreements', handlers.addNewAgreement)
 
