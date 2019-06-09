@@ -15,3 +15,4 @@ Microservice for å tilby et API til utlånsmidler.
 - APIet sjekker signaturstatus hos SvarUT ved forespørsler om avtaler og eventuelle deler
 - Ved status signert lagres status så ytterligere oppslag mot SvarUt er unødvendige
 - En avtale kan markeres som signert av administrator
+- Man kan hente "foreldreavtale" utfra forsendelsesId (fid) fra en under avtale

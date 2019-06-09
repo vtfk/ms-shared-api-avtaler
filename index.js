@@ -25,6 +25,7 @@ router.get('/agreements/:id', handlers.getAgreementById)
 router.post('/agreements/:id', handlers.updateAgreementById)
 router.post('/agreements/:id/sign', handlers.signAgreementById)
 router.delete('/agreements/:id', handlers.deleteAgreementById)
+router.get('/agreements/parent/:fid', handlers.getParentByFid)
 router.put('/agreements', handlers.addNewAgreement)
 
 module.exports = (request, response) => {
