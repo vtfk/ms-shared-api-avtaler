@@ -134,6 +134,8 @@ curl -v http://localhost:3000/agreements/5cfba60a47289a8314684faf
 
 Updates an agreement.
 
+Valid `id` are `_id` or `aid`
+
 ```
 $ curl -v POST http://localhost:3000/agreements/5cfba60a47289a8314684faf -d @test/data/update-agreement.json \
 --header "Content-Type: application/json"
@@ -143,6 +145,8 @@ $ curl -v POST http://localhost:3000/agreements/5cfba60a47289a8314684faf -d @tes
 
 Manually sign an agreement.
 
+Valid `id` are `_id` or `aid`
+
 ```
 $ curl -v POST http://localhost:3000/agreements/5cfca18f25a3a62e947d615b/sign -d @test/data/sign-agreement.json \
 --header "Content-Type: application/json"
@@ -151,6 +155,8 @@ $ curl -v POST http://localhost:3000/agreements/5cfca18f25a3a62e947d615b/sign -d
 ## ```DELETE /agreements/:id```
 
 Deletes the given agreement.
+
+Valid `id` are `_id` or `aid`
 
 ```
 $ curl -vX DELETE http://localhost:3000/agreements/5cfba60a47289a8314684faf
