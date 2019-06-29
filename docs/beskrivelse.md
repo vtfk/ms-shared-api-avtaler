@@ -16,3 +16,4 @@ Microservice for å tilby et API til utlånsmidler.
 - Ved status signert lagres status så ytterligere oppslag mot SvarUt er unødvendige
 - En avtale kan markeres som signert av administrator
 - Man kan hente "foreldreavtale" utfra forsendelsesId (fid) fra en under avtale
+- sendInvoiceToUid settes til selvstendig avtales uid om personen har signert og er over 18 år. Hvis ikke settes den til en av delenes uid om de er signert. Hvis ikke settes den til false.
