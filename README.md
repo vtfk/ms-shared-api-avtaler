@@ -85,7 +85,7 @@ Returns array of agreements
     history: [],
     isSigned: boolean
     data: [],
-    sendInvoiceTo: 'uid'
+    sendInvoiceToUid: 'uid'
   }  
 ]
 ```
@@ -126,7 +126,7 @@ curl -v http://localhost:3000/agreements/5cfba60a47289a8314684faf
     history: [],
     isSigned: boolean
     data: [],
-    sendInvoiceTo: 'uid'
+    sendInvoiceToUid: 'uid'
   }
 ```
 
