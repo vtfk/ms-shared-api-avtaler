@@ -82,12 +82,11 @@ Returns array of agreements
         status: '',
         updated: Date,
         isSigned: boolean,
-        data: []
+        history: []
       }
     ],
     history: [],
     isSigned: boolean
-    data: [],
     sendInvoiceToUid: 'uid'
   }  
 ]
@@ -124,13 +123,11 @@ curl -v http://localhost:3000/agreements/5cfba60a47289a8314684faf
         partOf: '',
         status: '',
         updated: Date,
-        isSigned: boolean,
-        data: []
+        isSigned: boolean
       }
     ],
     history: [],
     isSigned: boolean
-    data: [],
     sendInvoiceToUid: 'uid'
   }
 ```
@@ -182,8 +179,10 @@ curl -v http://localhost:3000/agreements/parent/333dec0e-158b-4b1c-9245-f6f205f3
     uid: '12345678987',
     aid: '5514ec16-59bf-4009-bd5d-452c57144a17',
     fid: '9b064152-5a50-4c3b-bc97-5c8edd87c3c1',
+    name: 'Gandalf Grå',
     type: 'elevpc',
     partOf: '',
+    updated: Date,
     isSigned: true
   }
 ]
