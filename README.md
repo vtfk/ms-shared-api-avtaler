@@ -139,7 +139,7 @@ Updates an agreement.
 Valid `id` are `_id` or `aid`
 
 ```
-$ curl -v POST http://localhost:3000/agreements/5cfba60a47289a8314684faf -d @test/data/update-agreement.json \
+$ curl -v POST http://localhost:3000/agreements/4408ea9d-f9b8-4673-95f9-70b7254b8a51 -d @test/data/update-agreement.json \
 --header "Content-Type: application/json"
 ```
 
@@ -150,7 +150,7 @@ Manually sign an agreement.
 Valid `id` are `_id` or `aid`
 
 ```
-$ curl -v POST http://localhost:3000/agreements/5cfca18f25a3a62e947d615b/sign -d @test/data/sign-agreement.json \
+$ curl -v POST http://localhost:3000/agreements/649735e8-6b24-4120-9354-aba721c75799/sign -d @test/data/sign-agreement.json \
 --header "Content-Type: application/json"
 ```
 
