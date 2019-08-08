@@ -26,7 +26,10 @@ Adds new agreement
     fid: '',
     name: '',
     type: '',
-    partOf: ''
+    partOf: '',
+    isDummy: '',
+    isManual: '',
+    canBeDigital: ''
   } 
 ```
 
@@ -69,7 +72,11 @@ Returns array of agreements
     name: '',
     type: '',
     partOf: '',
+    isDummy: '',
+    isManual: '',
+    canBeDigital: ''
     status: '',
+    created: Date,
     updated: Date,
     parts: [
       {
@@ -79,7 +86,11 @@ Returns array of agreements
         name: '',
         type: '',
         partOf: '',
+        isDummy: '',
+        isManual: '',
+        canBeDigital: ''
         status: '',
+        created: Date,
         updated: Date,
         isSigned: boolean,
         history: []
@@ -111,7 +122,11 @@ curl -v http://localhost:3000/agreements/5cfba60a47289a8314684faf
     name: '',
     type: '',
     partOf: '',
+    isDummy: '',
+    isManual: '',
+    canBeDigital: ''
     status: '',
+    created: Date,
     updated: Date,
     parts: [
       {
@@ -182,6 +197,10 @@ curl -v http://localhost:3000/agreements/parent/333dec0e-158b-4b1c-9245-f6f205f3
     name: 'Gandalf Grå',
     type: 'elevpc',
     partOf: '',
+    isDummy: '',
+    isManual: '',
+    canBeDigital: '',
+    created: Date,
     updated: Date,
     isSigned: true
   }
