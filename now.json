@@ -7,10 +7,10 @@
   ],
   "env": {
     "NODE_ENV": "production",
-    "JWT_SECRET": "@tfk-jwt-secret",
+    "JWT_SECRET": "@api-avtaler-secret",
     "MONGODB_CONNECTION": "@db-cosmos-prod-connection",
-    "MONGODB_COLLECTION": "avtaler",
-    "MONGODB_NAME": "minelev",
+    "MONGODB_COLLECTION": "@db-cosmos-prod-connection-avtaler-name",
+    "MONGODB_NAME": "@db-cosmos-prod-minelev-name",
     "SVARUT_SERVICE_URL": "@svarut-service-url",
     "SVARUT_SERVICE_SECRET": "@svarut-service-secret",
     "PAPERTRAIL_HOST": "@tfk-papertrail-host",
